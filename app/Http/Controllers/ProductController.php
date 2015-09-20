@@ -27,7 +27,9 @@ class ProductController extends Controller
     public function index()
     {
         $product = Product::all();
-        return view('backend.pages.product.listProduct',compact('product'));
+        return view('backend.pages.product.listProduct',array(
+            'product'=>$product
+            ));
     }
 
     /**
@@ -134,8 +136,14 @@ class ProductController extends Controller
         
         $cat_id = new category;
         $category = $cat_id->all();
+        $color = Color::all();
+        $size = Size::all();
         $product = Product::find($id);
-        return view('backend.pages.product.edit2', array('category'=>$category,'product'=>$product));
+        return view('backend.pages.product.edit2', array(
+            'category'=>$category,
+            'product'=>$product,
+            'color'=>$color,
+            'size'=>$size));
     }
 
     /**
@@ -149,7 +157,7 @@ class ProductController extends Controller
     {
         //
         $model = new Product;
-        $user = $model->updateProduct($id);
+        $model->updateProduct($id);
         return Redirect::to('admin/product');
     }
 

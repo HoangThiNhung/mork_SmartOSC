@@ -199,7 +199,7 @@
                                     <h3><a href="{{url('product-details/'.$row->id.'-product-'.$slug.'.html')}}">{{$row->name}}</a></h3>
                                     <p class="price">{{price_formate( $row->price )}} VND</p>
                                     <p class="buttons">
-                                        <a href="{{url('product-details/'.$row->id.'-product-'.$slug.'.html')}}" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Xem chi tiết</a>
+                                        <a href="{{url('product-details/'.$row->id.'-product-'.$slug.'.html')}}" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a>
                                     </p>
                                 </div>
                                 <?php if($row->status){

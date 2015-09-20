@@ -36,17 +36,10 @@
                             <li>
                                 <div class="yamm-content">
                                     <div class="row">
-                                         <!-- <div class="col-sm-3"> 
-                                             <h5>Clothing</h5>
-                                            <ul>
-                                                <li><a href="{{url('category/6')}}">Áo nam</a>
-                                                </li>
-                                                <li><a href="{{url('category/7')}}">Quần nam</a>
-                                                </li>
-                                            </ul>  -->
+                                         
 
                                             <?php print_r($menu_top) ?>
-                                        <!-- </div> -->
+                                        
                                             
                                     </div>
                                 </div>

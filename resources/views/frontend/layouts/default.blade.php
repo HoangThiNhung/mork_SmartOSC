@@ -19,27 +19,12 @@
    }(document, 'script', 'facebook-jssdk'));
 </script>
 
-    <!-- *** TOPBAR ***
- _________________________________________________________ -->
     @include('frontend.includes.topbar')
 
-    <!-- *** TOP BAR END *** -->
-
-    <!-- *** NAVBAR ***
- _________________________________________________________ -->
-
     @include('frontend.includes.navbar')
-    <!-- /#navbar -->
-
-    <!-- *** NAVBAR END *** -->
-
-
 
     @yield('content')
-        <!-- /#content -->
 
-        <!-- *** FOOTER ***
- _________________________________________________________ -->
 @include('frontend.includes.footer')
  <script type='text/javascript'>
     window._sbzq||function(e){e._sbzq=[];
@@ -50,23 +35,7 @@
     r.src=n+"//static.subiz.com/public/js/loader.js";
     var i=document.getElementsByTagName("script")[0];
     i.parentNode.insertBefore(r,i)}(window);
- </script>
-
-<script lang="javascript">
-    // (function() {
-    //     var _h1= document.getElementsByTagName('title')[0] || false;
-    //     var product_name = ''; 
-    //     if(_h1){
-    //         product_name= _h1.textContent || _h1.innerText;
-    //     }
-    //     var ga = document.createElement('script'); 
-    //     ga.type = 'text/javascript';
-    //     ga.src = '//live.vnpgroup.net/js/web_client_box.php?hash=eddd662b66ff38f5233000c0410ff2d4&data=eyJoYXNoIjoiODU0MDU3OGMyMTliOTgwYjUxMDYyM2NhODJlZmI1NDIiLCJzc29faWQiOjI2MTU3NDR9&pname='+product_name;
-    //     var s = document.getElementsByTagName('script');
-    //     s[0].parentNode.insertBefore(ga, s[0]);
-    // })();
-</script>
- 
+ </script> 
 </body>
 
 </html>

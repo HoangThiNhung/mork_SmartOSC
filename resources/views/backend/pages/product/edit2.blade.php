@@ -82,28 +82,16 @@
                           <label for="status" class="">Status</label>
                             <select class="table-group-action-input form-control input-medium" name="status">
                               <option value="{{$product->status}}">{{$product->status}}</option>
-                              <option value="HOT">HOT</option>
-                              <option value="SALE">SALE</option>
-                              <option value="GIF">GIF</option>
-                              <option value="NEW">NEW</option>
+                              <option value="1">Thin</option>
+                              <option value="2">Slim</option>
+                              <option value="3">Yolo</option>
+                              <option value="4">chuppy</option>
+                              <option value="5">fat</option>
                             </select>
                         </div>
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <div class="form-group">
-                            <label for="color" class="">Color</label>
-                              <input type="text" class="form-control" value="{{$product->color}}" id="color" placeholder="color" name="color">
-                        </div>
-                      </div>
-                      <div class="col-sm-6">
-                        <div class="form-group">
-                            <label for="sile" class="">Size</label>
-                              <input type="text" class="form-control" value="{{$product->size}}" id="size" placeholder="size" name="size">
-                        </div>
-                      </div>
-                    </div>
+
                     <div class="form-group">
                         <label for="promotion" class="">Promotion</label>
                           <input class="form-control" value="{{$product->promotion}}" id="promotion"  name="promotion">
@@ -119,12 +107,12 @@
                 <div class="col-md-6">
                 <h3></h3>
                   <div class="form-group">
-                      <label for="image" class="">Image 1</label>
-                        <input type="file" name="image" class="form-control">
+                      <label for="image" class="">thumbnail</label>
+                        {!! Form::file('image',array('class'=>'form-control')) !!}
                   </div>
                   <div class="form-group">
-                      <label for="image" class="">Image 2</label>
-                        <input type="file" name="image2" class="form-control">
+                      <label for="image" class="">Multiple Image</label>
+                        {!! Form::file('multi-images[]', array('multiple'=>true,'class'=>'form-control')) !!}
                   </div>
                 </div>
                 <div class="col-md-3"></div>

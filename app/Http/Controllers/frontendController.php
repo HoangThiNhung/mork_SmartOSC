@@ -153,6 +153,7 @@ class frontendController extends Controller {
 		$menu =  $obj->menu_left($obj->all()->toArray());
 		
 		return view('frontend.pages.subpages.detail', array(
+													'menu_top'=>$menu_top,
 													'product'=>$product,
 													'relative'=>$relative,
 													'cat'=>$cat,
@@ -164,9 +165,7 @@ class frontendController extends Controller {
 													'color'=>$color,
 													'size'=>$size,
 													'mapColor'=>$mapColor,
-													'mapSize'=>$mapSize,
-
-													'menu_top'=>$menu_top
+													'mapSize'=>$mapSize
 													));
 	}
 

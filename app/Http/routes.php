@@ -10,10 +10,9 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-// App::missing(function($exception)
-// {
-//     return Response::view('errors.404', array(), 404);
-// });
+Route::get('hello',function(){
+	echo 'Hello World!';
+});
 
 Route::get('/auth/login','AdminController@getLogin');
 Route::post('/auth/login','AdminController@postLogin');
@@ -49,6 +48,8 @@ Route::get('/checkout','frontendController@getCheckout');
 Route::post('/addOrder','frontendController@addOrder');
 //confirm order
 Route::get('/confirm-order/{token}/{id}','OrderController@activeOrder');
+
+
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 

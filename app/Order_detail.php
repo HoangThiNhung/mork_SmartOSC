@@ -31,10 +31,11 @@ class Order_detail extends Model
         $Order_detail = new Order_detail;
         $Order_detail->order_id = $orderid;
         $Order_detail->product_id = $key['id'];
+        $Order_detail->name = $key['name'];
         $Order_detail->quantity = $key['quantity'];
         $Order_detail->color_id =$key['color'];
         $Order_detail->size_id=$key['size'];
-        $Order_detail->price = $key['quantity']*$key['price'];
+        $Order_detail->price = $key['price'];
         $Order_detail->save();
         return;
     }

@@ -40,8 +40,6 @@
                         <th>category</th>
                         <th>quantity</th>
                         <th>description</th>
-                        <th>color</th>
-                        <th>size</th>
                         <th>status</th>
                         <th width="10%">update</th>
                         <th width="10%">delete</th>
@@ -67,8 +65,7 @@
                         </td>
                         <td>{{$row->quantity}}</td>
                         <td><textarea class="form-control" rows="3" name="description"><?php echo $row->description ?></textarea></td>
-                        <td>{{$row->color}}</td>
-                        <td>{{$row->size}}</td>
+                        
                         <td>{{$row->status}}</td>
                         <td> <a href="{{route('admin.product.edit',$row->id)}}" class="btn btn-warning">Update</a></td>
                         <td>

@@ -102,14 +102,10 @@
                         @foreach($detail as $showdata)
                         <tr>
                             <td><?php echo $showdata->product_id; ?></td>
-                            <?php 
-                              foreach ($product as $key) {
-                                # code...
-                                if($key->id==$showdata->product_id){ ?>
                             <td>
-                                 <?php  echo $key->name; ?></td>
+                                 <?php  echo $showdata->name; ?></td>
                             <td><?php echo $showdata->quantity; ?></td>
-                            <td><?php echo $key->price; }}?> VND</td>
+                            <td><?php echo $showdata->price; ?> VND</td>
                             <td><?php 
                             if($showdata->color_id==0)
                               echo "N/A";
@@ -131,8 +127,8 @@
                                   echo $key->name;
                               }
                             } ?></td>
-                            <td><?php echo $showdata->price; ?> VND</td>
-                            <?php $totalprice = $totalprice + $showdata->price; ?>                        
+                            <td><?php echo $showdata->price*$showdata->quantity; ?> VND</td>
+                            <?php $totalprice = $totalprice + $showdata->price*$showdata->quantity; ?>                        
                         </tr>
                         @endforeach
                         <tr>

@@ -97,11 +97,6 @@
                       <div class="col-sm-6">
                         <div class="form-group">
                             <label for="color" class="">Color</label>
-                            <!-- @foreach($color as $colors)
-                              <div class="checkbox">
-                                <label><input type="checkbox" value="{{$colors->id}}" name="color[]">{{$colors->name}}</label>
-                              </div>
-                            @endforeach -->
                               <select multiple class="table-group-action-input form-control input-medium" name="color[]">
                                 <option value="">Select...</option>
                                 @foreach($color as $colors)
@@ -114,11 +109,6 @@
                       <div class="col-sm-6">
                         <div class="form-group">
                             <label for="sile" class="">Size</label>
-                            <!-- @foreach($size as $sizes)
-                              <div class="checkbox">
-                                <label><input type="checkbox" value="{{$sizes->id}}" name="size">{{$sizes->name}}</label>
-                              </div>
-                            @endforeach -->
                             <select multiple class="table-group-action-input form-control input-medium" name="size[]">
                                 <option value="">Select...</option>
                                 @foreach($size as $sizes)

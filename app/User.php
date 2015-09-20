@@ -79,7 +79,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'linhnhungnguyen94@gmail.com';
-        $mail->Password = 'nhung!!)*';
+        $mail->Password = 'nhung1609';
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
         $mail->From = 'noreply@gmail.com';

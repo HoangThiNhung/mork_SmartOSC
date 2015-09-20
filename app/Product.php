@@ -87,16 +87,12 @@ class Product extends Model implements AuthenticatableContract, CanResetPassword
                 `price` = :price,
                 `promotion` = :promotion,
                 `quantity` = :quantity,
-                `color` =:color,
-                `size` =:size,
                 `category_id` =:category_id,
                 `status` =:status
             where id = :id',    ['name'=>$data['name'],
                                 'price'=>$data['price'],
                                 'promotion'=>$data['promotion'],
                                 'quantity'=>$data['quantity'],
-                                'color'=>$data['color'],
-                                'size'=>$data['size'],
                                 'category_id'=>$data['category_id'],
                                 'status'=>$data['status'],
                                 'id'=>$id
